@@ -1,3 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;1,700&display=swap");
+
+body {
+  font-family: "Titillium Web", sans-serif !important;
+}
+
+.judul {
+  font-family: "Pacifico", cursive;
+  font-size: larger;
+}
+
 .App {
   text-align: center;
 }
