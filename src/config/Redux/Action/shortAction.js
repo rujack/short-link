@@ -7,7 +7,7 @@ export const setShort = (url) => (dispatch) => {
   });
   return new Promise((resolve, reject) => {
     axios
-      .post(`https://v.gd/create.php?format=json&url=${url}`)
+      .post(`https://is.gd/create.php?format=json&url=${url}`)
       .then((result) => {
         const responseApi = result.data;
         dispatch({

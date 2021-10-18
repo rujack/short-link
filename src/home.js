@@ -197,11 +197,11 @@ const Home = () => {
           </Col>
         </Row>
         <a
-          href="https://v.gd/index.php"
+          href="https://is.gd/index.php"
           className=" link-dark"
           target="_blank"
           rel="noreferrer">
-          https://v.gd/index.php
+          https://is.gd/index.php
         </a>
       </Container>
       <Navbar className=" border-top">
