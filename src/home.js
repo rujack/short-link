@@ -33,7 +33,8 @@ const Home = () => {
     }
   }, [data, loading, dispatch, url]);
 
-  const Short = () => {
+  const Short = (e) => {
+    e.preventDefault();
     dispatch(setShort(url));
   };
 
@@ -90,7 +91,7 @@ const Home = () => {
       </Container>
       <div id="short" style={{ backgroundColor: "#282c34" }}>
         <Container className="text-white py-4">
-          <Form>
+          <Form onSubmit={Short}>
             <p className="text-danger m-0">{data.errormessage}</p>
             <Row>
               <Col md="8" lg="9" className="my-1">
@@ -112,7 +113,7 @@ const Home = () => {
                       : `border-0 text-white w-100`
                   }
                   style={{ backgroundColor: "#fd6a29" }}
-                  onClick={Short}>
+                  type="submit">
                   Shorten
                 </Button>
               </Col>
